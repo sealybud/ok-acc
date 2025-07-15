@@ -11,19 +11,33 @@
 <hr>
 <nav class="clicks">
     <ul>
-        <li><a href="index.html">home</a></li>
+      <div class="clicks-container">
+        <li><a href="ok acc.html">home</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="">?</a></li>
-        <li><a href="ok acc$.html" target="_blank">pay me</a></li>
+        <li><a href="ok acc$.html" target="_blank">pay me</a></li></div>
     </ul>
 </nav>
 
 <br>
-<br>
-<br>
-<br>
-<br>
-<video src="balls.mp4" controls width="500"></video>  <video src="apple2005.mp4" controls width="500"></video>  <video src="man.mp4" controls width="495"></video>
+<video style="display: block; margin: auto;" id="myVideo" width="640" height="360" controls>
+  <source src="balls.mp4" type="video/mp4">
+</video>
+
+<div class="videos-container">
+  <button class="videos"; onclick="changeVideo('balls.mp4')">Video 1</button>
+  <button class="videos"; onclick="changeVideo('apple2005.mp4')">Video 2</button>
+  <button class="videos"; onclick="changeVideo('man.mp4')">Video 3</button>
+</div>
+
+<script>
+  function changeVideo(newVideoSrc) {
+    const videoPlayer = document.getElementById('myVideo');
+    videoPlayer.src = newVideoSrc;
+    videoPlayer.load(); // Loads the new video into the player
+    videoPlayer.play(); // Automatically plays the new video
+}
+</script>
 <body>
 <br>
 <br>
@@ -82,7 +96,17 @@
 <br>
 <br>
 <div id="about"; style="text-align: center; font-size: xx-large;">
-  <p>about section coming soon</p>
+  <p><b><u>ABOUT THIS WEBSITE:</u></b></p>
+  <p>So I made this website in February 2025 when I started to learn how to use Visual Studio Code, and I had made a test website that I never published.
+    But then after playing around and learning how to make a website I wanted to make an actual one, which became this one. <br><br>
+    
+    The original name for this website is "WELCOME TO WEB 2" but by the time you're reading this is probably will be changed idk. <br><br>
+    
+    Anyway, I made this site on February 23, and then I didn't touch it for months, until July 9 when I wanted to start to make websites again and started editing this one.<br><br> 
+    
+    In the time between February and July, I was coding in different places like Linux and Mac and learning how to use VBox and stuff like that. In April, I was coding a lot in Linux Mint especially,
+    and I still use it today. But yea, this website is just for me to figure out what I wanna do and learn more on how to make it better.</p>
+  </p>
   </div>
 <br>
 <br>
