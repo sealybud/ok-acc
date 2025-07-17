@@ -7,15 +7,44 @@
 
 
 </head>
-<h1 style="text-align: center;">добрий ранок</h1>
+<h1 style="font-size: xx-large; text-align: center;" id="greeting"></h1>
+<script>
+const hour = new Date().getHours();
+let greetingText = '';
+
+if (hour < 12) {
+  greetingText="добрий ранок"
+} else if (hour < 18) {
+  greetingText="добрий afternoon"
+}  else {
+  greetingText="добрий evening"
+}
+
+document.getElementById('greeting').textContent = greetingText;
+</script>
+<h1></h1>
+  <p style="text-align: center;" id="date"></p>
+  <script>
+    const today = new Date();
+  
+    // Format: "Month Day, Year"
+    const formattedDate = today.toLocaleDateString('en-US', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  
+    document.getElementById('date').textContent = formattedDate;
+  </script>
 <hr>
 <nav class="clicks">
     <ul>
       <div class="clicks-container">
         <li><a href="index.html">home</a></li>
-        <li><a href="#about">about</a></li>
+        <li><a href="about.html">about</a></li>
         <li><a href="updates.html">updates</a></li>
-        <li><a href="">?</a></li>
+        <li><a href="blog.html">blog</a></li>
         <li><a href="ok acc$.html" target="_blank">pay me</a></li></div>
     </ul>
 </nav>
@@ -48,21 +77,8 @@
 <br>
 <br>
 <br>
-<p style="font-size: 55px; text-align: center;">Today is:</p>
-<p style="font-size: 60px; text-align: center;" id="date"></p>
-<script>
-  const today = new Date();
-
-  // Format: "Month Day, Year"
-  const formattedDate = today.toLocaleDateString('en-US', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  });
-
-  document.getElementById('date').textContent = formattedDate;
-</script>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -84,7 +100,6 @@
 <br>
 <br>
 <br>
-<br>
 <br> 
 <br>
 <br>
@@ -92,7 +107,6 @@
 <br>
 <br>
 <br> 
-</div>
 <br>
 <br>
 <br>
@@ -115,37 +129,6 @@
 <a style="text-decoration: none;" href="https://www.youtube.com/@sealybud52?sub_confirmation=1" target="_blank">
   <button class="paybutton";>Subscribe to my channel</button></a>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div id="about"; style="text-align: center; font-size: xx-large;">
-  <p><b><u>ABOUT THIS WEBSITE:</u></b></p>
-  <p>So I made this website in February 2025 when I started to learn how to use Visual Studio Code, and I had made a test website that I never published.
-    But then after playing around and learning how to make a website I wanted to make an actual one, which became this one. <br><br>
-    
-    The original name for this website is "WELCOME TO WEB 2" but by the time you're reading this is probably will be changed idk. <br><br>
-    
-    Anyway, I made this site on February 23, and then I didn't touch it for months, until July 9 when I wanted to start to make websites again and started editing this one.<br><br> 
-    
-    In the time between February and July, I was coding in different places like Linux and Mac and learning how to use VBox and stuff like that. In April, I was coding a lot in Linux Mint especially,
-    and I still use it today. But yea, this website is just for me to figure out what I wanna do and learn more on how to make it better.</p>
-  </p>
-  </div>
 <br>
 <br>
 <br>
