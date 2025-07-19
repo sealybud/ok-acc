@@ -43,8 +43,8 @@ document.getElementById('greeting').textContent = greetingText;
       <div class="clicks-container">
         <li><a href="index.html">home</a></li>
         <li><a href="about.html">about</a></li>
-        <li><a href="updates.html">updates</a></li>
-        <li><a href="blog.html">blog</a></li>
+        <li><a href="">?</a></li>
+        <li><a href="messageboard.html">message board</a></li>
         <li><a href="ok acc$.html" target="_blank">pay me</a></li></div>
     </ul>
 </nav>
@@ -59,6 +59,7 @@ document.getElementById('greeting').textContent = greetingText;
   <button class="videos"; onclick="changeVideo('apple2005.mp4')">Video 2</button>
   <button class="videos"; onclick="changeVideo('man.mp4')">Video 3</button>
   <button class="videos"; onclick="changeVideo('5mincrafts.mp4')">Video 4</button>
+  <button class="videos"; onclick="changeVideo('yt.mp3')">Audio 1</button>
 </div>
 
 <script>
@@ -89,25 +90,45 @@ document.getElementById('greeting').textContent = greetingText;
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br> 
+ <label id="countLabel">0</label><br>
+    <div id="btnContainer">
+        <button id="decreaseBtn" class="buttons">decrease</button>
+        <button id="resetBtn" class="buttons">reset</button>
+        <button id="increaseBtn" class="buttons">increase</button>
+    </div>
+<script>
+const increaseBtn = document.getElementById("increaseBtn");
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const countLabel = document.getElementById("countLabel");
+let count = 0;
+
+increaseBtn.onclick = function(){
+    count++;
+    countLabel.textContent = count;
+}
+decreaseBtn.onclick = function(){
+    count--;
+    countLabel.textContent = count;
+}
+resetBtn.onclick = function(){
+    count = 0;
+    countLabel.textContent = count;
+}</script>
 <br>
 <br>
 <br>
 <br>
-<br> 
 <br>
 <br>
 <br>
 <br>
 <br>
-<br> 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
