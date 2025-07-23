@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WELCOME TO WEB 2</title>
 
     <link rel="stylesheet" href="style2.css">
 
-
 </head>
-<h1 style="font-size: xx-large; text-align: center;" id="greeting"></h1>
+<h1 id="heading" style="text-align: center;"></h1>
 <script>
 const hour = new Date().getHours();
 let greetingText = '';
@@ -22,21 +24,7 @@ if (hour < 12) {
 
 document.getElementById('greeting').textContent = greetingText;
 </script>
-<h1></h1>
   <p style="text-align: center;" id="date"></p>
-  <script>
-    const today = new Date();
-  
-    // Format: "Month Day, Year"
-    const formattedDate = today.toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-  
-    document.getElementById('date').textContent = formattedDate;
-  </script>
 <hr>
 <nav class="clicks">
     <ul>
@@ -44,7 +32,6 @@ document.getElementById('greeting').textContent = greetingText;
         <li><a href="index.html">home</a></li>
         <li><a href="about.html">about</a></li>
         <li><a href="">?</a></li>
-        <li><a href="messageboard.html">message board</a></li>
         <li><a href="ok acc$.html" target="_blank">pay me</a></li></div>
     </ul>
 </nav>
@@ -79,7 +66,7 @@ document.getElementById('greeting').textContent = greetingText;
 <br>
 <br>
 <br>
-<br>
+<p style="font-size: 80px; text-align: center; color: red;">somethings coming soon..........</p>
 <br>
 <br>
 <br>
@@ -115,7 +102,8 @@ decreaseBtn.onclick = function(){
 resetBtn.onclick = function(){
     count = 0;
     countLabel.textContent = count;
-}</script>
+}
+</script>
 <br>
 <br>
 <br>
@@ -187,5 +175,6 @@ resetBtn.onclick = function(){
     but started to edit on 7-9-2025
 </p>
 
+<script src="index.js"></script>
 </body>
 </html>
