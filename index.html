@@ -14,12 +14,16 @@
 const hour = new Date().getHours();
 let greetingText = '';
 
-if (hour < 12) {
+if (hour < 4) {
+  greetingText="добраніч"
+} else if (hour < 12) {
   greetingText="добрий ранок"
 } else if (hour < 18) {
-  greetingText="добрий afternoon"
+  greetingText="добрий день"
+} else if (hour < 21) {
+  greetingText="добрий вечір"
 }  else {
-  greetingText="добрий evening"
+  greetingText="добраніч"
 }
 
 document.getElementById('greeting').textContent = greetingText;
