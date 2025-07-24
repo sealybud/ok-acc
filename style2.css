@@ -68,11 +68,55 @@
     padding: 10px 20px;
     font-size: 1.5em;
     color: white;
-    background-color: hsl(112, 97%, 27%);
+    background-color: hsl(0, 100%, 47%);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.25s;
 }
 .buttons:hover{
-    background-color: hsl(108, 87%, 15%)
+    background-color: hsl(0, 100%, 27%)
+}
+.dropdown{
+    display: inline-block;
+}
+.dropdown button{
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: hsl(0, 0%, 70%);
+}
+.dropdown a:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.clearname{
+    font-size: 40px;
+    display: block;
+    margin: auto;
+    background-color: rgb(110, 107, 107);
+    transition: background-color 0.25s;
+    padding: 5px;
+    border: 5px solid white;
+}
+.clearname:hover{
+    background-color: rgb(66, 65, 65);
 }
