@@ -14,4 +14,4 @@ document.getElementById("heading").textContent = `${greetingText}, ${username}`
       day: 'numeric'
     });
   
-    document.getElementById('date').textContent = formattedDate;
+    document.getElementById('date').textContent = `Today is: ${formattedDate}`;
