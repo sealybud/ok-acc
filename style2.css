@@ -119,4 +119,17 @@
 }
 .clearname:hover{
     background-color: rgb(66, 65, 65);
+    cursor: pointer;
+}
+.dont{
+    font-size: 8.5px;
+}
+.seasonpic{
+    border: 5px solid yellow;
+    display: block;
+    margin: auto;
+}
+.seasonText{
+    text-align: center;
+    font-size: 50px;
 }
