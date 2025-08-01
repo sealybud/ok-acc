@@ -80,7 +80,7 @@
     display: inline-block;
 }
 .dropdown button{
-    background-color: hsl(0, 0%, 80%);
+    background-color: #221085;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -88,25 +88,26 @@
 }
 .dropdown a{
     display: block;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px 15px;
+    background-color: #221085;
 }
-.dropdown .content{
+.dropdown .seasonmoon{
     display: none;
     position: absolute;
     background-color: hsl(0, 0%, 95%);
     min-width: 100px;
-    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    color: white;
 }
-.dropdown:hover .content{
+.dropdown:hover .seasonmoon{
     display: block;
 }
 .dropdown:hover button{
-    background-color: hsl(0, 0%, 70%);
+    background-color: #180d53;
 }
 .dropdown a:hover{
-    background-color: hsl(0, 0%, 90%);
+    background-color: #130854
 }
 .clearname{
     font-size: 40px;
@@ -133,3 +134,19 @@
     text-align: center;
     font-size: 50px;
 }
+.same{
+    display: inline-block;
+    text-align: center;
+}
+/* this is for if you want to make the clock sit on the right on the same line as the date
+.test{
+    position: relative;
+}
+.center{
+    text-align: center;
+}
+.right{
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
