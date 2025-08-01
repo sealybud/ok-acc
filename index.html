@@ -9,33 +9,16 @@
     <link rel="stylesheet" href="style2.css">
 
 </head>
-<h1 id="heading" style="text-align: center;"></h1>
-<script>
-const hour = new Date().getHours();
-let greetingText = '';
-
-if (hour < 4) {
-  greetingText="добраніч"
-} else if (hour < 12) {
-  greetingText="добрий ранок"
-} else if (hour < 18) {
-  greetingText="добрий день"
-} else if (hour < 21) {
-  greetingText="добрий вечір"
-}  else {
-  greetingText="добраніч"
-}
-
-document.getElementById('greeting').textContent = greetingText;
-</script>
-  <p style="text-align: center;" id="date"></p>
+<h1 id="greeting" style="text-align: center;"></h1>
+<p style="text-align: center; font-size: large;" id="date"></p>
+<div id="clock" style="text-align: center; font-size: larger;"></div>
 <hr>
 <nav class="clicks">
     <ul>
       <div class="clicks-container">
         <li><a href="index.html">home</a></li>
         <li><a href="about.html">about</a></li>
-        <li><a href="">?</a></li>
+        <li><a href="seasonmoon.html">season & moon</a></li>
         <li><a href="https://www.roblox.com/game-pass/240012879/Donate" target="_blank">pay me (robux)</a></li></div>
     </ul>
 </nav>
@@ -76,6 +59,7 @@ document.getElementById('greeting').textContent = greetingText;
 <br>
 <button class="clearname" id="clearNameButton">click this to change your username</button>
 <p style="font-size: 45px; text-align: center;">(refresh after)</p>
+<br>
 <br>
 <br>
 <br>
@@ -140,9 +124,6 @@ resetBtn.onclick = function(){
 <br>
 <br>
 <br>
-<p class="seasonText">☀️Current season is:☀️</p>
-<img src="summer.jpg" width="700" length="600" class="seasonpic">
-<p class="seasonText">Next season starts on:<br>🍁Sep 22, 2025🍁</p>
 <br>
 <br>
 <br>
