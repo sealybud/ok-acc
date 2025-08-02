@@ -82,29 +82,31 @@
 .dropdown button{
     background-color: #221085;
     color: white;
-    padding: 10px 15px;
-    border: none;
+    padding: 10px 20px;
+    border: 1.5px solid white;
     cursor: pointer;
+    font-size: 25px;
 }
 .dropdown a{
     display: block;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     background-color: #221085;
+    font-size: 25px;
 }
-.dropdown .seasonmoon{
+.dropdown .seasonsmoons{
     display: none;
     position: absolute;
     background-color: hsl(0, 0%, 95%);
     min-width: 100px;
     color: white;
 }
-.dropdown:hover .seasonmoon{
+.dropdown:hover .seasonsmoons{
     display: block;
 }
 .dropdown:hover button{
-    background-color: #180d53;
+    background-color: #130854;
 }
 .dropdown a:hover{
     background-color: #130854
@@ -124,15 +126,6 @@
 }
 .dont{
     font-size: 8.5px;
-}
-.seasonpic{
-    border: 5px solid yellow;
-    display: block;
-    margin: auto;
-}
-.seasonText{
-    text-align: center;
-    font-size: 50px;
 }
 .same{
     display: inline-block;
