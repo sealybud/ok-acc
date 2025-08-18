@@ -50,6 +50,51 @@ function displayNextSeason() {
 
 displayNextSeason();
 
+// HOW MANY DAYS SCRIPTS //
+    // SPRING //
+        const howManySpring = new Date('2026-03-20T00:00:00');
+        const howManySpringDays = new Date();
+        howManySpringDays.setHours(0, 0, 0, 0);
+
+        const springnumber = howManySpring.getTime() - howManySpringDays.getTime();
+
+        const differenceInSpringDays = Math.ceil(springnumber / (1000 * 60 * 60 * 24));
+
+        document.getElementById('springDays').textContent = `starts in ${differenceInSpringDays} days (March 20, 2026)`;
+
+    // SUMMER //
+        const howManySummer = new Date('2026-06-20T00:00:00');
+        const howManySummerDays = new Date();
+        howManySummerDays.setHours(0, 0, 0, 0);
+
+        const summernumber = howManySummer.getTime() - howManySummerDays.getTime();
+
+        const differenceInSummerDays = Math.ceil(summernumber / (1000 * 60 * 60 * 24));
+
+        document.getElementById('summerDays').textContent = `starts in ${differenceInSummerDays} days (June 20, 2026)`;
+
+    // FALL //
+        const howManyFall = new Date('2025-09-22T00:00:00');
+        const howManyFallDays = new Date();
+        howManyFallDays.setHours(0, 0, 0, 0);
+
+        const fallnumber = howManyFall.getTime() - howManyFallDays.getTime();
+
+        const differenceInFallDays = Math.ceil(fallnumber / (1000 * 60 * 60 * 24));
+
+        document.getElementById('fallDays').textContent = `starts in ${differenceInFallDays} days (September 22, 2025)`;
+
+    // WINTER //
+        const howManyWinter = new Date('2025-12-21T00:00:00');
+        const howManyWinterDays = new Date();
+        howManyWinterDays.setHours(0, 0, 0, 0);
+
+        const winternumber = howManyWinter.getTime() - howManyWinterDays.getTime();
+
+        const differenceInWinterDays = Math.ceil(winternumber / (1000 * 60 * 60 * 24));
+
+        document.getElementById('winterDays').textContent = `starts in ${differenceInWinterDays} days (December 21, 2025)`;
+
 // DATE SCRIPT //
 
     const today = new Date();
