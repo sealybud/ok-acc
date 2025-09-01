@@ -131,6 +131,14 @@
     display: inline-block;
     text-align: center;
 }
+.mapstext{
+    font-size: 50px;
+}
+.mapsintro{
+    background-color: #038ba2;
+    border: 5px solid black;
+    padding: 5px;
+}
 /* this is for if you want to make the clock sit on the right on the same line as the date
 .test{
     position: relative;
