@@ -152,3 +152,70 @@ function updateClock() {
   updateClock();
 
   setInterval(updateClock, 1000);
+
+// SUNSET SCRIPT //
+
+const latitude = 40.7128;  // Example: New York City
+const longitude = -74.0060; // Example: New York City
+
+const url = `https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}&formatted=0`;
+
+async function getSunsetTime() {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (data.status === "OK") {
+      const sunsetUTC = data.results.sunset;
+      
+      
+      const sunsetDate = new Date(sunsetUTC);
+      const options = { hour: 'numeric', minute: '2-digit', hour12: true };
+      const localSunsetTime = sunsetDate.toLocaleTimeString('en-US', options);
+
+      
+      document.getElementById('sunset-time').textContent = `The sun will set at: ${localSunsetTime}`;
+    } else {
+      document.getElementById('sunset-time').textContent = `Error: ${data.status}`;
+    }
+
+  } catch (error) {
+    document.getElementById('sunset-time').textContent = `Failed to fetch sunset data.`;
+    console.error('Error fetching sunset data:', error);
+  }
+}
+
+getSunsetTime();
+
+// SUNRISE SCRIPT //
+const lat = 40.7128;  // Example: New York City
+const long = -74.0060; // Example: New York City
+
+const urls = `https://api.sunrise-sunset.org/json?lat=${latitude}&lng=${longitude}&formatted=0`;
+
+async function getSunriseTime() {
+  try {
+    const response = await fetch(urls);
+    const data = await response.json();
+
+    if (data.status === "OK") {
+      const sunriseUTC = data.results.sunrise;
+      
+      
+      const sunriseDate = new Date(sunriseUTC);
+      const options = { hour: 'numeric', minute: '2-digit', hour12: true };
+      const localSunriseTime = sunriseDate.toLocaleTimeString('en-US', options);
+
+      
+      document.getElementById('sunrise-time').textContent = `The sun will rise at: ${localSunriseTime}`;
+    } else {
+      document.getElementById('sunrise-time').textContent = `Error: ${data.status}`;
+    }
+
+  } catch (error) {
+    document.getElementById('sunrise-time').textContent = `Failed to fetch sunrise data.`;
+    console.error('Error fetching sunrise data:', error);
+  }
+}
+
+getSunriseTime();
