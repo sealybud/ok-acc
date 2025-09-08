@@ -151,3 +151,6 @@
     right: 0;
     top: 0;
 } */
+.wordspace{
+    display: inline-block;
+}
