@@ -174,7 +174,7 @@ async function getSunsetTime() {
       const localSunsetTime = sunsetDate.toLocaleTimeString('en-US', options);
 
       
-      document.getElementById('sunset-time').textContent = `The sun will set at: ${localSunsetTime}`;
+      document.getElementById('sunset-time').textContent = `${localSunsetTime}`;
     } else {
       document.getElementById('sunset-time').textContent = `Error: ${data.status}`;
     }
@@ -207,7 +207,7 @@ async function getSunriseTime() {
       const localSunriseTime = sunriseDate.toLocaleTimeString('en-US', options);
 
       
-      document.getElementById('sunrise-time').textContent = `The sun will rise at: ${localSunriseTime}`;
+      document.getElementById('sunrise-time').textContent = `${localSunriseTime}`;
     } else {
       document.getElementById('sunrise-time').textContent = `Error: ${data.status}`;
     }
