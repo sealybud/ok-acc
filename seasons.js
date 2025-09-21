@@ -1,12 +1,12 @@
 // SEASON SCRIPT //
 function displayCurrentSeason() {
     const currentDate = new Date(); 
-        const startSpring = new Date('2026-03-20'); 
-        const endSpring = new Date('2026-06-20');
-        const startSummer = new Date('2025-06-20'); 
-        const endSummer = new Date('2025-09-21');
-        const startFall = new Date('2025-09-22'); 
-        const endFall = new Date('2025-12-20');
+        const startSpring = new Date('2026-03-21'); 
+        const endSpring = new Date('2026-06-22');
+        const startSummer = new Date('2025-06-22'); 
+        const endSummer = new Date('2025-09-23');
+        const startFall = new Date('2025-09-23'); // 2026 summer starts June 21 //
+        const endFall = new Date('2025-12-22');
     let currentSeason = "";
 
     if (currentDate >= startSpring && currentDate <= endSpring) { 
@@ -27,12 +27,12 @@ displayCurrentSeason();
 // NEXT SEASON SCRIPT //
 function displayNextSeason() {
     const nextDate = new Date();
-        const startnextSpring = new Date('2026-03-20'); 
-        const endnextSpring = new Date('2026-06-20');
-        const startnextSummer = new Date('2025-06-20'); 
-        const endnextSummer = new Date('2025-09-21');
-        const startnextFall = new Date('2025-09-22'); 
-        const endnextFall = new Date('2025-12-20');
+        const startnextSpring = new Date('2026-03-21'); 
+        const endnextSpring = new Date('2026-06-22');
+        const startnextSummer = new Date('2025-06-22'); // 2026 summer starts June 21 //
+        const endnextSummer = new Date('2025-09-23'); 
+        const startnextFall = new Date('2025-09-23'); 
+        const endnextFall = new Date('2025-12-22');
     let nextseason = "";
 
     if (nextDate >= startnextSpring && nextDate <= endnextSpring) {
