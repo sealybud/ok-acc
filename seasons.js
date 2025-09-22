@@ -1,12 +1,12 @@
 // SEASON SCRIPT //
 function displayCurrentSeason() {
     const currentDate = new Date(); 
-        const startSpring = new Date('2026-03-21'); 
-        const endSpring = new Date('2026-06-22');
-        const startSummer = new Date('2025-06-22'); 
-        const endSummer = new Date('2025-09-23');
-        const startFall = new Date('2025-09-23'); // 2026 summer starts June 21 //
-        const endFall = new Date('2025-12-22');
+        const startSpring = new Date('2026-03-20T00:00:00'); 
+        const endSpring = new Date('2026-06-20T23:59:59');
+        const startSummer = new Date('2025-06-21T00:00:00'); 
+        const endSummer = new Date('2025-09-21T23:59:59');
+        const startFall = new Date('2025-09-22T00:00:00'); // 2026 summer starts June 21 //
+        const endFall = new Date('2025-12-21T23:59:59');
     let currentSeason = "";
 
     if (currentDate >= startSpring && currentDate <= endSpring) { 
@@ -27,12 +27,12 @@ displayCurrentSeason();
 // NEXT SEASON SCRIPT //
 function displayNextSeason() {
     const nextDate = new Date();
-        const startnextSpring = new Date('2026-03-21'); 
-        const endnextSpring = new Date('2026-06-22');
-        const startnextSummer = new Date('2025-06-22'); // 2026 summer starts June 21 //
-        const endnextSummer = new Date('2025-09-23'); 
-        const startnextFall = new Date('2025-09-23'); 
-        const endnextFall = new Date('2025-12-22');
+        const startnextSpring = new Date('2026-03-20T00:00:00'); 
+        const endnextSpring = new Date('2026-06-20T23:59:59');
+        const startnextSummer = new Date('2025-06-21T00:00:00'); // 2026 summer starts June 21 //
+        const endnextSummer = new Date('2025-09-21T23:59:59'); 
+        const startnextFall = new Date('2025-09-22T00:00:00'); 
+        const endnextFall = new Date('2025-12-21T23:59:59');
     let nextseason = "";
 
     if (nextDate >= startnextSpring && nextDate <= endnextSpring) {
@@ -74,7 +74,7 @@ displayNextSeason();
         document.getElementById('summerDays').textContent = `starts in ${differenceInSummerDays} days (June 20, 2026)`;
 
     // FALL //
-        const howManyFall = new Date('2025-09-22T00:00:00');
+        const howManyFall = new Date('2026-09-22T00:00:00');
         const howManyFallDays = new Date();
         howManyFallDays.setHours(0, 0, 0, 0);
 
@@ -82,7 +82,7 @@ displayNextSeason();
 
         const differenceInFallDays = Math.ceil(fallnumber / (1000 * 60 * 60 * 24));
 
-        document.getElementById('fallDays').textContent = `starts in ${differenceInFallDays} days (September 22, 2025)`;
+        document.getElementById('fallDays').textContent = `starts in ${differenceInFallDays} days (September 22, 2026)`;
 
     // WINTER //
         const howManyWinter = new Date('2025-12-21T00:00:00');
@@ -109,7 +109,7 @@ displayNextSeason();
 
 
 // NEXT DATE //
-const nextDate = new Date('2025-09-23');
+const nextDate = new Date('2025-12-21T00:00:00');
 
     const formatDate = nextDate.toLocaleDateString('en-US', {
       year: 'numeric',
@@ -122,7 +122,7 @@ const nextDate = new Date('2025-09-23');
 
 // COUNTDOWN SCRIPT //
 
-const targetDate = new Date('2025-09-22T00:00:00');
+const targetDate = new Date('2025-12-21T00:00:00');
 const countdownday = new Date();
 countdownday.setHours(0, 0, 0, 0);
 
