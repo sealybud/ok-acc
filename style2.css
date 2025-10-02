@@ -139,6 +139,41 @@
     border: 5px solid black;
     padding: 5px;
 }
+.posting{
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    display: block; 
+    margin: auto; 
+    border: 2px solid white;
+
+}
+.note{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    cursor: default;
+}
+.theactualnote{
+    position: absolute;
+    display: none;
+    background-color: #a79900;
+    left: 50%;
+    right: 50%;
+    bottom: 100%;
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: auto;
+    transition: ease-in;
+}
+.note:hover .theactualnote{
+    display: block;
+    margin: auto;
+}
+
 /* this is for if you want to make the clock sit on the right on the same line as the date
 .test{
     position: relative;
@@ -151,7 +186,3 @@
     right: 0;
     top: 0;
 } */
-.wordspace{
-    display: inline-block;
-}
-
