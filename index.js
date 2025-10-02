@@ -88,17 +88,23 @@ const textarea = document.getElementById("textarea")
 const input = document.getElementById("input")
 
 button.addEventListener("click", function() {
-  const inputValue = input.value;
-  textarea.textContent = `${inputValue} (${username}, ${POSTDATE})`
+  const inputValue = input.value.trim();
+  if (inputValue === "") return;
 
-});
+  const POSTING = new Date();
 
-
-const POSTING = new Date();
-
-    const POSTDATE = today.toLocaleDateString('en-US', {
+    const POSTDATE = POSTING.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'numeric',
       day: 'numeric'
     });
+
+  const newPost = `${inputValue} (${username}, ${POSTDATE})`
+
+  textarea.textContent += (textarea.textContent ? "\n\n" : "") + newPost;
+
+  input.value = "";
+
+
+});
 
