@@ -3,8 +3,8 @@ function displayCurrentSeason() {
     const currentDate = new Date(); 
         const startSpring = new Date('2026-03-20T00:00:00'); 
         const endSpring = new Date('2026-06-20T23:59:59');
-        const startSummer = new Date('2025-06-21T00:00:00'); 
-        const endSummer = new Date('2025-09-21T23:59:59');
+        const startSummer = new Date('2026-06-21T00:00:00'); 
+        const endSummer = new Date('2026-09-21T23:59:59');
         const startFall = new Date('2025-09-22T00:00:00'); // 2026 summer starts June 21 //
         const endFall = new Date('2025-12-21T23:59:59');
     let currentSeason = "";
@@ -29,8 +29,8 @@ function displayNextSeason() {
     const nextDate = new Date();
         const startnextSpring = new Date('2026-03-20T00:00:00'); 
         const endnextSpring = new Date('2026-06-20T23:59:59');
-        const startnextSummer = new Date('2025-06-21T00:00:00'); // 2026 summer starts June 21 //
-        const endnextSummer = new Date('2025-09-21T23:59:59'); 
+        const startnextSummer = new Date('2026-06-21T00:00:00'); // 2026 summer starts June 21 //
+        const endnextSummer = new Date('2026-09-21T23:59:59'); 
         const startnextFall = new Date('2025-09-22T00:00:00'); 
         const endnextFall = new Date('2025-12-21T23:59:59');
     let nextseason = "";
@@ -219,3 +219,4 @@ async function getSunriseTime() {
 }
 
 getSunriseTime();
+
