@@ -108,4 +108,21 @@ button.addEventListener("click", function() {
 
 });
 
+// SCREENSHOT SCRIPT //
+ document.getElementById('screenshot').addEventListener('click', function() {
+    const captureArea = document.getElementById('captureArea'); // Or document.body for the whole page
+
+    html2canvas(captureArea).then(canvas => {
+        // Convert the canvas to an image data URL
+        const imageDataURL = canvas.toDataURL('image/png');
+
+        // Option 2: Download the screenshot
+        const a = document.createElement('a');
+        a.href = imageDataURL;
+        a.download = 'web2post.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+});
 
