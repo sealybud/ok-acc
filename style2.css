@@ -183,7 +183,7 @@
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 17px;
     background-color: black;
     transition: background-color 0.25s;
 }
@@ -203,3 +203,4 @@
     right: 0;
     top: 0;
 } */
+
