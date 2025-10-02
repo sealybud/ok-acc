@@ -51,6 +51,14 @@
 
   setInterval(updateClock, 1000);
 
+// VIDEOS SCRIPT //
+  function changeVideo(newVideoSrc) {
+    const videoPlayer = document.getElementById('myVideo');
+    videoPlayer.src = newVideoSrc;
+    videoPlayer.load(); // Loads the new video into the player
+    videoPlayer.play(); // Automatically plays the new video
+}
+
 // REMEMBER USERNAME //
   let username = localStorage.getItem("rememberedUsername");
 
@@ -72,3 +80,25 @@
     username = null;
     headingElement.textContent = `${greetingText}, Guest`;
   });
+
+
+// POST SCRIPT //
+const button = document.getElementById("button")
+const textarea = document.getElementById("textarea")
+const input = document.getElementById("input")
+
+button.addEventListener("click", function() {
+  const inputValue = input.value;
+  textarea.textContent = `${inputValue} (${username}, ${POSTDATE})`
+
+});
+
+
+const POSTING = new Date();
+
+    const POSTDATE = today.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'numeric',
+      day: 'numeric'
+    });
+
