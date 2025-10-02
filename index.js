@@ -99,7 +99,7 @@ button.addEventListener("click", function() {
       day: 'numeric'
     });
 
-  const newPost = `${inputValue} (${username}, ${POSTDATE})`
+  const newPost = `${inputValue} \n (${username}, ${POSTDATE})`
 
   textarea.textContent += (textarea.textContent ? "\n\n" : "") + newPost;
 
@@ -107,4 +107,5 @@ button.addEventListener("click", function() {
 
 
 });
+
 
