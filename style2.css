@@ -146,7 +146,11 @@
     display: block; 
     margin: auto; 
     border: 2px solid white;
-
+    background-color: black;
+    transition: background-color 0.25s;
+}
+.posting:hover{
+    background-color: #6d6d6d;
 }
 .note{
     font-size: 20px;
@@ -173,7 +177,20 @@
     display: block;
     margin: auto;
 }
-
+.screenshot{
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: black;
+    transition: background-color 0.25s;
+}
+.screenshot:hover{
+    background-color: #02a97a;
+    cursor: pointer;
+}
 /* this is for if you want to make the clock sit on the right on the same line as the date
 .test{
     position: relative;
