@@ -178,18 +178,35 @@
     margin: auto;
 }
 .screenshot{
-    display: block;
-    margin: auto;
     border: 2px solid white;
     padding: 10px;
     border-radius: 10px;
-    font-size: 17px;
+    font-size: 20px;
     background-color: black;
     transition: background-color 0.25s;
 }
 .screenshot:hover{
     background-color: #02a97a;
     cursor: pointer;
+}
+.clear{
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    background-color: black;
+    display: block;
+    border-radius: 10px;
+    transition: background-color 0.25s;
+}
+.clear:hover{
+    background-color: #02a97a;
+    cursor: pointer;
+}
+.ok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 /* this is for if you want to make the clock sit on the right on the same line as the date
 .test{
@@ -203,4 +220,3 @@
     right: 0;
     top: 0;
 } */
-
