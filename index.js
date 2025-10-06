@@ -87,6 +87,13 @@ const button = document.getElementById("button")
 const textarea = document.getElementById("textarea")
 const input = document.getElementById("input")
 
+window.addEventListener("load", function () {
+  const savedPosts = localStorage.getItem("posts");
+  if (savedPosts) {
+    textarea.textContent = savedPosts;
+  }
+});
+
 button.addEventListener("click", function() {
   const inputValue = input.value.trim();
   if (inputValue === "") return;
@@ -96,16 +103,27 @@ button.addEventListener("click", function() {
     const POSTDATE = POSTING.toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'numeric',
-      day: 'numeric'
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+      hour12: true
     });
 
   const newPost = `${inputValue} \n (${username}, ${POSTDATE})`
 
   textarea.textContent += (textarea.textContent ? "\n\n" : "") + newPost;
 
+  localStorage.setItem("posts", textarea.textContent);
+
   input.value = "";
 
+});
 
+ const clear = document.getElementById('clear')
+  clear.addEventListener("click", function () {
+  localStorage.removeItem("posts");
+  textarea.textContent = "";
 });
 
 // SCREENSHOT SCRIPT //
