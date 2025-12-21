@@ -5,8 +5,8 @@ function displayCurrentSeason() {
         const endSpring = new Date('2026-06-20T23:59:59');
         const startSummer = new Date('2026-06-21T00:00:00'); 
         const endSummer = new Date('2026-09-21T23:59:59');
-        const startFall = new Date('2025-09-22T00:00:00'); // 2026 summer starts June 21 //
-        const endFall = new Date('2025-12-21T23:59:59');
+        const startFall = new Date('2026-09-22T00:00:00');
+        const endFall = new Date('2026-12-20T23:59:59');
     let currentSeason = "";
 
     if (currentDate >= startSpring && currentDate <= endSpring) { 
@@ -29,10 +29,10 @@ function displayNextSeason() {
     const nextDate = new Date();
         const startnextSpring = new Date('2026-03-20T00:00:00'); 
         const endnextSpring = new Date('2026-06-20T23:59:59');
-        const startnextSummer = new Date('2026-06-21T00:00:00'); // 2026 summer starts June 21 //
+        const startnextSummer = new Date('2026-06-21T00:00:00'); 
         const endnextSummer = new Date('2026-09-21T23:59:59'); 
-        const startnextFall = new Date('2025-09-22T00:00:00'); 
-        const endnextFall = new Date('2025-12-21T23:59:59');
+        const startnextFall = new Date('2026-09-22T00:00:00');
+        const endnextFall = new Date('2026-12-20T23:59:59'); 
     let nextseason = "";
 
     if (nextDate >= startnextSpring && nextDate <= endnextSpring) {
@@ -85,7 +85,7 @@ displayNextSeason();
         document.getElementById('fallDays').textContent = `starts in ${differenceInFallDays} days (September 22, 2026)`;
 
     // WINTER //
-        const howManyWinter = new Date('2025-12-21T00:00:00');
+        const howManyWinter = new Date('2026-12-21T00:00:00');
         const howManyWinterDays = new Date();
         howManyWinterDays.setHours(0, 0, 0, 0);
 
@@ -93,7 +93,7 @@ displayNextSeason();
 
         const differenceInWinterDays = Math.ceil(winternumber / (1000 * 60 * 60 * 24));
 
-        document.getElementById('winterDays').textContent = `starts in ${differenceInWinterDays} days (December 21, 2025)`;
+        document.getElementById('winterDays').textContent = `starts in ${differenceInWinterDays} days (December 21, 2026)`;
 
 // DATE SCRIPT //
 
@@ -109,7 +109,7 @@ displayNextSeason();
 
 
 // NEXT DATE //
-const nextDate = new Date('2025-12-21T00:00:00');
+const nextDate = new Date('2026-03-20T00:00:00');
 
     const formatDate = nextDate.toLocaleDateString('en-US', {
       year: 'numeric',
@@ -122,7 +122,7 @@ const nextDate = new Date('2025-12-21T00:00:00');
 
 // COUNTDOWN SCRIPT //
 
-const targetDate = new Date('2025-12-21T00:00:00');
+const targetDate = new Date('2026-03-20T00:00:00');
 const countdownday = new Date();
 countdownday.setHours(0, 0, 0, 0);
 
@@ -219,4 +219,3 @@ async function getSunriseTime() {
 }
 
 getSunriseTime();
-
