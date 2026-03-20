@@ -52,7 +52,7 @@ displayNextSeason();
 
 // HOW MANY DAYS SCRIPTS //
     // SPRING //
-        const howManySpring = new Date('2026-03-20T00:00:00');
+        const howManySpring = new Date('2027-03-20T00:00:00');
         const howManySpringDays = new Date();
         howManySpringDays.setHours(0, 0, 0, 0);
 
@@ -60,7 +60,7 @@ displayNextSeason();
 
         const differenceInSpringDays = Math.ceil(springnumber / (1000 * 60 * 60 * 24));
 
-        document.getElementById('springDays').textContent = `starts in ${differenceInSpringDays} days (March 20, 2026)`;
+        document.getElementById('springDays').textContent = `starts in ${differenceInSpringDays} days (March 20, 2027)`;
 
     // SUMMER //
         const howManySummer = new Date('2026-06-20T00:00:00');
@@ -109,7 +109,7 @@ displayNextSeason();
 
 
 // NEXT DATE //
-const nextDate = new Date('2026-03-20T00:00:00');
+const nextDate = new Date('2026-06-20T00:00:00');
 
     const formatDate = nextDate.toLocaleDateString('en-US', {
       year: 'numeric',
@@ -122,7 +122,7 @@ const nextDate = new Date('2026-03-20T00:00:00');
 
 // COUNTDOWN SCRIPT //
 
-const targetDate = new Date('2026-03-20T00:00:00');
+const targetDate = new Date('2026-06-20T00:00:00');
 const countdownday = new Date();
 countdownday.setHours(0, 0, 0, 0);
 
